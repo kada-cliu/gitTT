@@ -1,1 +1,459 @@
-﻿﻿two
+04-10 15:27:00.750 11636 11636 D wrapperjni: [forceInterpretOnly] build code:16
+04-10 15:27:00.750 11636 11636 D wrapperjni: [ProcessDynamicLoad][856]: ART mode detected
+04-10 15:27:00.750 11636 11636 I wrapperjni: ++++++[ProcessArtDynamicLoad] begin
+04-10 15:27:00.750 11636 11636 I wrapperjni: ++++++[getPlainDexMem] begin
+04-10 15:27:00.750 11636 11636 I wrapperjni: ++++++[getPlainDexMem] end, cost time 0.000000 ms
+04-10 15:27:00.750 11636 11636 I wrapperjni: ++++++[processDexFileInternal] begin
+04-10 15:27:00.750 11636 11636 D wrapperjni: [processDexFileInternal][210]: dex base:0x78eb9f5ffc len:9040040
+04-10 15:27:00.750 11636 11636 D wrapperjni: [getOatVersion][80]: OatVersion:265 ArtType:12
+04-10 15:27:00.750 11636 11636 D wrapperjni: [tryParseOatVersion][194]: oatversion:265 arttype:12 sdkversion:36
+04-10 15:27:00.750 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] begin
+04-10 15:27:00.750 11636 11636 D wrapperjni: [getDexFileByOpenOnAndroidU] try parse openCommon method address on android U
+04-10 15:27:00.752 11636 11636 D wrapperjni: 7cd5e41000-7cd5e53000 r--p 00000000 fe:1e 92                             /apex/com.android.art/lib64/libdexfile.so
+04-10 15:27:00.752 11636 11636 D wrapperjni:  : low 0x7cd5e41000, base 0x7cd5e41000
+04-10 15:27:00.752 11636 11636 D wrapperjni: [getSoBaseInMem][247]: getSoBaseInMem, find libdexfile.so base 0x7cd5e41000 in line 7cd5e41000-7cd5e53000 r--p 00000000 fe:1e 92                             /apex/com.android.art/lib64/libdexfile.so
+04-10 15:27:00.752 11636 11636 D wrapperjni: getElfUtil libdexfile.so memory parse begin 0x7cd5e41000
+04-10 15:27:00.752 11636 11636 D wrapperjni: [loadElfFile] begin
+04-10 15:27:00.752 11636 11636 D wrapperjni: [loadElfFile] elfBaseAddr: 0x7cd5e41000
+04-10 15:27:00.752 11636 11636 D wrapperjni: [loadElfFile] end
+04-10 15:27:00.752 11636 11636 D wrapperjni: getElfUtil loadElfFile success,insert soname:libdexfile.so pElfUtil:0x7a23d8a530 pSoMemBase:0x7cd5e41000
+04-10 15:27:00.752 11636 11636 D wrapperjni: getSymbolAddrInSo symbol _ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhjRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE addr: 0x0
+04-10 15:27:00.752 11636 11636 E wrapperjni: [getElfUtil] find cache elf util:0x7a23d8a530 soname:libdexfile.so
+04-10 15:27:00.752 11636 11636 D wrapperjni: [FindDynamicSymbolAddress] found symbol _ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE, size:1480
+04-10 15:27:00.752 11636 11636 D wrapperjni: getSymbolAddrInSo symbol _ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE addr: 0x7cd5e5f2dc
+04-10 15:27:00.752 11636 11636 D wrapperjni: [GetFunctionAddress] found function:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE(0x7cd5e5f2dc) in libdexfile.so, apilevel:36
+04-10 15:27:00.752 11636 11636 D wrapperjni: [getDexFileByOpenModelUBeta] nRet:0x7c03da83d0
+04-10 15:27:00.752 11636 11636 D wrapperjni: [getDexFileByOpenMemory][793]: nret:0x7c03da83d0
+04-10 15:27:00.752 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] end, cost time 1.000000 ms
+04-10 15:27:00.752 11636 11636 D wrapperjni: [patchMem] begin
+04-10 15:27:00.752 11636 11636 D wrapperjni: [initMem] pDexBase:0x78eb9f5ffc
+04-10 15:27:00.752 11636 11636 I wrapperjni: ++++++[unzipProtectFileToMem] begin
+04-10 15:27:00.752 11636 11636 D wrapperjni: isEntryExists context 0x79d6e76c40, size 0xc03bb
+04-10 15:27:00.752 11636 11636 D wrapperjni: findEntryByName meth2
+04-10 15:27:00.752 11636 11636 D wrapperjni: [findEntryByName][160]: find meth2
+04-10 15:27:00.752 11636 11636 D wrapperjni: meth2 exist 1
+04-10 15:27:00.752 11636 11636 I wrapperjni: ++++++[unzipToMem] begin
+04-10 15:27:00.752 11636 11636 I wrapperjni: [unzipToMem][1141]: context 0x79d6e76c40, size 0xc03bb
+04-10 15:27:00.752 11636 11636 D wrapperjni: find entry : meth2
+04-10 15:27:00.752 11636 11636 D wrapperjni: findEntryByName meth2
+04-10 15:27:00.752 11636 11636 D wrapperjni: [findEntryByName][160]: find meth2
+04-10 15:27:00.752 11636 11636 D wrapperjni: offset [00000023][localoff:00000000, nameLen:5, extralen:0], crc[634402b1], method[8], compress_len[43819], name[meth2]
+04-10 15:27:00.752 11636 11636 D wrapperjni: strm.avail_out 0
+04-10 15:27:00.752 11636 11636 D wrapperjni: uncompress buf len ab2b, result 0
+04-10 15:27:00.752 11636 11636 I wrapperjni: [unzipToMem][1152]: ret = 43804
+04-10 15:27:00.752 11636 11636 I wrapperjni: ++++++[unzipToMem] end, cost time 0.000000 ms
+04-10 15:27:00.752 11636 11636 E wrapperjni: [unzipDataDbItemToMem] m_pDataDBMem:0x79d6e76c40 pItemContent:0x7b13dda090 entry:meth2
+04-10 15:27:00.752 11636 11636 D wrapperjni: [unzipDataDbItemToMemUsingRandomKey][400]: load meth2 success,ptr:0x7b13dda090 len:43804
+04-10 15:27:00.752 11636 11636 I wrapperjni: ++++++[unzipProtectFileToMem] end, cost time 0.000000 ms
+04-10 15:27:00.752 11636 11636 E wrapperjni: [parseNativeMethodInternal] begin,nMethCnt:143 nMemLen:43804
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5a740 com/babycloud/hanju/permission/PermissionUtils$PermissionActivity onCreate count:143(0) native_index:02006c0b
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5a040 com/babycloud/hanju/ui/services/VideoDownloadService onCreate count:143(1) native_index:0200bea9
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5aba0 com/babycloud/hanju/dlna/AutoCastService onCreate count:143(2) native_index:020026f7
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5b8c0 com/babycloud/hanju/carp/baoyunapi/BaoYunRewardAdActivity onCreate count:143(3) native_index:02000f92
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5b0e0 com/babycloud/hanju/contribute/ui/ContributionSubmitActivity onCreate count:143(4) native_index:020025ad
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d566f0 com/babycloud/hanju/contribute/ui/LinkContributionInputActivity onCreate count:143(5) native_index:020025c2
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d57db0 com/babycloud/hanju/contribute/ui/SimpleWebViewActivity onCreate count:143(6) native_index:020025d9
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d56680 com/babycloud/hanju/contribute/ui/VideoDraftManageActivity onCreate count:143(7) native_index:020025f2
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5a0b0 com/babycloud/hanju/contribute/ui/VideoDraftPreviewActivity onCreate count:143(8) native_index:02002600
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d588a0 com/babycloud/hanju/contribute/ui/VideoDraftSelectActivity onCreate count:143(9) native_index:02002616
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5bcb0 com/babycloud/hanju/contribute/ui/VideoDraftSubmitActivity onCreate count:143(10) native_index:02002651
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5a970 com/babycloud/hanju/feedback/AliyunFeedbackActivity onCreate count:143(11) native_index:0200289d
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5b230 com/babycloud/hanju/homepage/ModifyHomepageBackgroundActivity onCreate count:143(12) native_index:02002977
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5ab30 com/babycloud/hanju/media/activity/TopicVideoPreviewActivity onCreate count:143(13) native_index:02002e16
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5aac0 com/babycloud/hanju/media/activity/VideoMVActivity onCreate count:143(14) native_index:02002e66
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5aeb0 com/babycloud/hanju/media/activity/VideoPoiActivity onCreate count:143(15) native_index:02002e78
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5bb60 com/babycloud/hanju/media/activity/VideoSearchPlayActivity onCreate count:143(16) native_index:02002e7f
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5be00 com/babycloud/hanju/media/activity/VideoShortTopPlayActivity onCreate count:143(17) native_index:02002e88
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5b620 com/babycloud/hanju/media/activity/VideoWebAdvActivity onCreate count:143(18) native_index:02002ecb
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5b930 com/babycloud/hanju/pay/LoginAndJumpVipActivity onCreate count:143(19) native_index:02006af5
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5dfb0 com/babycloud/hanju/pay/PaymentRealResultActivity onCreate count:143(20) native_index:02006bc1
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5b690 com/babycloud/hanju/point/PointBillsActivity onCreate count:143(21) native_index:02006d30
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5cea0 com/babycloud/hanju/point/TaskActivity onCreate count:143(22) native_index:02006d94
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5c1f0 com/babycloud/hanju/question/QuestionActivity onCreate count:143(23) native_index:0200724f
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5c110 com/babycloud/hanju/search/activity/SearchActivity onCreate count:143(24) native_index:0200747f
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5cc70 com/babycloud/hanju/search/activity/SearchResultActivity2 onCreate count:143(25) native_index:020074b8
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5ea30 com/babycloud/hanju/search/activity/SearchResultActivity3 onCreate count:143(26) native_index:020074db
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61510 com/babycloud/hanju/search/activity/SearchResultActivity onCreate count:143(27) native_index:020074f5
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d612e0 com/babycloud/hanju/ui/activity/AccountSecurityCenterActivity onCreate count:143(28) native_index:02008176
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60b70 com/babycloud/hanju/ui/activity/BBSActivity onCreate count:143(29) native_index:0200817a
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d66980 com/babycloud/hanju/ui/activity/BBSDetailActivity onCreate count:143(30) native_index:0200818a
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d66210 com/babycloud/hanju/ui/activity/CacheSettingActivity onCreate count:143(31) native_index:02008192
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d67160 com/babycloud/hanju/ui/activity/CacheSpaceNotEnoughTipActivity onCreate count:143(32) native_index:02008198
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d66670 com/babycloud/hanju/ui/activity/CancelAccountFeedBackActivity onCreate count:143(33) native_index:020081a1
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d66130 com/babycloud/hanju/ui/activity/CancelAccountNotifyActivity onCreate count:143(34) native_index:020081b0
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d662f0 com/babycloud/hanju/ui/activity/CancelAccountReasonActivity onCreate count:143(35) native_index:020081cb
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d66050 com/babycloud/hanju/ui/activity/CategoryDetailActivity onCreate count:143(36) native_index:020081e0
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d66d70 com/babycloud/hanju/ui/activity/ChangePhoneActivity onCreate count:143(37) native_index:020081ef
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d66bb0 com/babycloud/hanju/ui/activity/ChannelActivity onCreate count:143(38) native_index:020081f6
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d66b40 com/babycloud/hanju/ui/activity/ClassicStyleSettingActivity onCreate count:143(39) native_index:02008207
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d67010 com/babycloud/hanju/ui/activity/ConfirmQRCodeLoginActivity onCreate count:143(40) native_index:02008216
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d67400 com/babycloud/hanju/ui/activity/ConversationActivity onCreate count:143(41) native_index:02008226
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d66750 com/babycloud/hanju/ui/activity/CreateTopicActivity onCreate count:143(42) native_index:02008288
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d66520 com/babycloud/hanju/ui/activity/CreateTopicShareImageActivity onCreate count:143(43) native_index:020082e1
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d66600 com/babycloud/hanju/ui/activity/CreateTopicVoteActivity onCreate count:143(44) native_index:0200831d
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d63ab0 com/babycloud/hanju/ui/activity/CutPhotoActivity onCreate count:143(45) native_index:02008331
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d63ff0 com/babycloud/hanju/ui/activity/DirectionalPushActivity onCreate count:143(46) native_index:0200833d
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d644c0 com/babycloud/hanju/ui/activity/DlnaSearchActivity onCreate count:143(47) native_index:02008352
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d63ce0 com/babycloud/hanju/ui/activity/DraftSearchActivity onCreate count:143(48) native_index:02008370
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d64140 com/babycloud/hanju/ui/activity/EditHobbyActivity onCreate count:143(49) native_index:020083be
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d63880 com/babycloud/hanju/ui/activity/EditMyDataActivity onCreate count:143(50) native_index:020083df
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d63570 com/babycloud/hanju/ui/activity/EditNickNameActivity onCreate count:143(51) native_index:02008402
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d63500 com/babycloud/hanju/ui/activity/EditProfessionActivity onCreate count:143(52) native_index:0200841a
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d646f0 com/babycloud/hanju/ui/activity/FansAssistActivity onCreate count:143(53) native_index:02008430
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d621c0 com/babycloud/hanju/ui/activity/FansContributionActivity onCreate count:143(54) native_index:02008444
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d623f0 com/babycloud/hanju/ui/activity/FollowActivity onCreate count:143(55) native_index:02008469
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62a10 com/babycloud/hanju/ui/activity/GalleryBigImageActivity onCreate count:143(56) native_index:02008489
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62070 com/babycloud/hanju/ui/activity/HanjuCategoryActivity onCreate count:143(57) native_index:020084ad
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62460 com/babycloud/hanju/ui/activity/HanjuDetailActivity onCreate count:143(58) native_index:02008500
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62ee0 com/babycloud/hanju/ui/activity/HanjuDetailEntranceActivity onCreate count:143(59) native_index:02008513
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61d60 com/babycloud/hanju/ui/activity/HanjuDetailIntroActivity onCreate count:143(60) native_index:02008517
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61f90 com/babycloud/hanju/ui/activity/HanjuFamineActivity onCreate count:143(61) native_index:02008529
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62af0 com/babycloud/hanju/ui/activity/HanjuHomeActivity onCreate count:143(62) native_index:02008542
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60e80 com/babycloud/hanju/ui/activity/HelpCenterActivity onCreate count:143(63) native_index:020085d1
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60be0 com/babycloud/hanju/ui/activity/HotSubCategoryVideoActivity onCreate count:143(64) native_index:020085fb
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61740 com/babycloud/hanju/ui/activity/LiveStationsActivity onCreate count:143(65) native_index:02008603
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60ef0 com/babycloud/hanju/ui/activity/LoginActivity onCreate count:143(66) native_index:02008608
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d619e0 com/babycloud/hanju/ui/activity/MagicWindowActivity onCreate count:143(67) native_index:0200860b
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61660 com/babycloud/hanju/ui/activity/MediaBlockActivity onCreate count:143(68) native_index:02008633
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5f7c0 com/babycloud/hanju/ui/activity/MessageFoldDetailActivity onCreate count:143(69) native_index:02008643
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60a20 com/babycloud/hanju/ui/activity/MessageSettingActivity onCreate count:143(70) native_index:02008654
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60390 com/babycloud/hanju/ui/activity/MultiSelectPictureActivity onCreate count:143(71) native_index:0200867b
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61350 com/babycloud/hanju/ui/activity/MyMessageV2Activity onCreate count:143(72) native_index:020086b2
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61580 com/babycloud/hanju/ui/activity/MySettingActivity onCreate count:143(73) native_index:020086b9
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61970 com/babycloud/hanju/ui/activity/NetConnectivityTipActivity onCreate count:143(74) native_index:020086c1
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d604e0 com/babycloud/hanju/ui/activity/OtherQRcodeActivity onCreate count:143(75) native_index:020086cd
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61200 com/babycloud/hanju/ui/activity/PersonalInfoCollectionActivity onCreate count:143(76) native_index:020086e0
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61820 com/babycloud/hanju/ui/activity/PersonalInfoWebViewActivity onCreate count:143(77) native_index:0200871b
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60b00 com/babycloud/hanju/ui/activity/PersonalIntroActivity onCreate count:143(78) native_index:02008744
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61120 com/babycloud/hanju/ui/activity/PreViewPictureActivity onCreate count:143(79) native_index:0200877a
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61040 com/babycloud/hanju/ui/activity/RecommendDyyxActivity onCreate count:143(80) native_index:020087b3
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d609b0 com/babycloud/hanju/ui/activity/RecommendHanjuActivity onCreate count:143(81) native_index:020087b9
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61900 com/babycloud/hanju/ui/activity/ScanQRcodeActivity onCreate count:143(82) native_index:020087d9
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d606a0 com/babycloud/hanju/ui/activity/SearchStarActivity onCreate count:143(83) native_index:020087f7
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60630 com/babycloud/hanju/ui/activity/SecondaryTopicPostActivity onCreate count:143(84) native_index:02008804
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d615f0 com/babycloud/hanju/ui/activity/SecondaryVideoPostActivity onCreate count:143(85) native_index:0200880b
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d617b0 com/babycloud/hanju/ui/activity/ShortVideoReportActivity onCreate count:143(86) native_index:0200882b
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60f60 com/babycloud/hanju/ui/activity/SimplePreViewPictureActivity onCreate count:143(87) native_index:02008856
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60fd0 com/babycloud/hanju/ui/activity/SplashActivity onCreate count:143(88) native_index:020088c4
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d613c0 com/babycloud/hanju/ui/activity/StarBillsActivity onCreate count:143(89) native_index:020088d9
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d608d0 com/babycloud/hanju/ui/activity/StarLiveListActivity onCreate count:143(90) native_index:02008963
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60550 com/babycloud/hanju/ui/activity/StarRankActivity onCreate count:143(91) native_index:0200897c
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61890 com/babycloud/hanju/ui/activity/SubscriptionManagementActivity onCreate count:143(92) native_index:020089ab
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5ecd0 com/babycloud/hanju/ui/activity/SystemImageChooseMultiSelectActivity onCreate count:143(93) native_index:020089c8
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d601d0 com/babycloud/hanju/ui/activity/SystemImageScanActivity onCreate count:143(94) native_index:020089e4
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5fe50 com/babycloud/hanju/ui/activity/TabCategoryActivity onCreate count:143(95) native_index:020089fd
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5f600 com/babycloud/hanju/ui/activity/TopicDetailActivity onCreate count:143(96) native_index:02008a02
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5f830 com/babycloud/hanju/ui/activity/TopicImageScanActivity onCreate count:143(97) native_index:02008a16
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d616d0 com/babycloud/hanju/ui/activity/TopicOperateActivity onCreate count:143(98) native_index:02008a44
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d614a0 com/babycloud/hanju/ui/activity/TopicSelectVideoActivity onCreate count:143(99) native_index:02008a70
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60d30 com/babycloud/hanju/ui/activity/TopicSquareActivity onCreate count:143(100) native_index:02008a7d
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60400 com/babycloud/hanju/ui/activity/TransactionRecordActivity onCreate count:143(101) native_index:02008a90
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60a90 com/babycloud/hanju/ui/activity/TransparentActivity onCreate count:143(102) native_index:02008a92
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60c50 com/babycloud/hanju/ui/activity/UserFansActivity onCreate count:143(103) native_index:02008aa6
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61430 com/babycloud/hanju/ui/activity/VerticalFullScreenVideoActivity onCreate count:143(104) native_index:02008ac5
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61190 com/babycloud/hanju/ui/activity/VideoCacheMoreActivity onCreate count:143(105) native_index:02008b41
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d605c0 com/babycloud/hanju/ui/activity/VideoDraftManagerActivity2 onCreate count:143(106) native_index:02008b76
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5fb40 com/babycloud/hanju/ui/activity/VideoFlowActivity onCreate count:143(107) native_index:02008b9b
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5ee20 com/babycloud/hanju/ui/activity/VipAutoPayActivity onCreate count:143(108) native_index:02008ba2
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5fec0 com/babycloud/hanju/ui/activity/VipExchangeCodeActivity onCreate count:143(109) native_index:02008bc1
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60010 com/babycloud/hanju/ui/activity/VipPrivilegesDetailActivity onCreate count:143(110) native_index:02008c63
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5ee90 com/babycloud/hanju/ui/activity/VipRedeemCodeActivity onCreate count:143(111) native_index:02008c8c
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5f750 com/babycloud/hanju/ui/activity/WelcomeActivity onCreate count:143(112) native_index:02008cac
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60e10 com/babycloud/hanju/ui/activity/browser/BrowserActivity onCreate count:143(113) native_index:02008d1c
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60780 com/babycloud/hanju/updateSchedule/UpdateScheduleActivity onCreate count:143(114) native_index:0200c53f
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d5ed40 com/babycloud/hanju/youngmode/YoungModeInputPasswordActivity onCreate count:143(115) native_index:0200c654
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61ba0 com/babycloud/hanju/youngmode/YoungModeRelieveLimitActivity onCreate count:143(116) native_index:0200c67f
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62150 com/babycloud/hanju/youngmode/YoungModeSettingActivity onCreate count:143(117) native_index:0200c703
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d60da0 com/babycloud/hanju/youngmode/YoungModelShortVideoPlayActivity onCreate count:143(118) native_index:0200c746
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62d90 com/babycloud/hanju/media/activity/VideoLiveActivity onCreate count:143(119) native_index:02002e57
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62380 com/babycloud/hanju/media/activity/VideoStarLiveActivity2 onCreate count:143(120) native_index:02002ea7
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62770 com/babycloud/hanju/media/activity/VideoStarLiveActivity onCreate count:143(121) native_index:02002eba
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62f50 com/babycloud/hanju/ui/activity/FavoriteSeriesActivity onCreate count:143(122) native_index:02008454
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61ac0 com/babycloud/hanju/ui/activity/MyCollectionActivity onCreate count:143(123) native_index:02008697
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62e70 com/babycloud/hanju/ui/activity/OfflineCacheActivity onCreate count:143(124) native_index:020086c9
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62310 com/babycloud/hanju/ui/activity/PlayHistoryActivity2 onCreate count:143(125) native_index:02008757
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62690 com/babycloud/hanju/ui/activity/SingleProductPayActivity onCreate count:143(126) native_index:020088a2
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62a80 com/babycloud/hanju/ui/activity/VideoCacheItemActivity onCreate count:143(127) native_index:02008add
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62fc0 com/babycloud/hanju/ui/activity/VipPayActivity onCreate count:143(128) native_index:02008c40
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62620 com/babycloud/hanju/ui/activity/browser/UnCacheFinishActivity onCreate count:143(129) native_index:02008d4a
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d624d0 com/babycloud/hanju/homepage/PersonalHomePageActivity onCreate count:143(130) native_index:020029c6
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d622a0 com/babycloud/hanju/seriesRank/NewSeriesRankActivity2 onCreate count:143(131) native_index:02007888
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62e00 com/babycloud/hanju/ui/activity/DramaActivity onCreate count:143(132) native_index:0200839d
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61e40 com/babycloud/hanju/ui/activity/HanjuSeriesActivity onCreate count:143(133) native_index:02008595
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62bd0 com/babycloud/hanju/ui/activity/StarDetailActivity onCreate count:143(134) native_index:02008940
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62d20 com/babycloud/hanju/youngmode/YoungModeSeriesActivity onCreate count:143(135) native_index:0200c6b6
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62230 com/fl/saas/base/inner/interstitial/YdInterstitialActivity onCreate count:143(136) native_index:04009071
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d620e0 com/fl/saas/base/inner/reward/YdInnerRewardVideoActivity onCreate count:143(137) native_index:040091e7
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d630a0 com/fl/saas/base/inner/spread/YdSpreadActivity onCreate count:143(138) native_index:04009249
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d61eb0 com/fl/saas/common/widget/h5/YdH5Activity onCreate count:143(139) native_index:04009b77
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d627e0 com/domob/sdk/ads/ui/DownloadActivity onCreate count:143(140) native_index:04006520
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62c40 com/domob/sdk/ads/ui/RewardVideoPlayActivity onCreate count:143(141) native_index:04006568
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseNativeMethodInternal] pMd:0x7ab3d62700 com/domob/sdk/ads/ui/WebViewActivity onCreate count:143(142) native_index:04006584
+04-10 15:27:00.752 11636 11636 D wrapperjni: [parseProtectedNativedMethod] function count:143
+04-10 15:27:00.752 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] begin
+04-10 15:27:00.752 11636 11636 D wrapperjni: [unzipPatchFileToMem] m_pPatchDataMem.size():0 dexIndex:1
+04-10 15:27:00.752 11636 11636 D wrapperjni: isEntryExists context 0x79d6e76c40, size 0xc03bb
+04-10 15:27:00.752 11636 11636 D wrapperjni: findEntryByName patch
+04-10 15:27:00.752 11636 11636 D wrapperjni: [findEntryByName][160]: find patch
+04-10 15:27:00.752 11636 11636 D wrapperjni: patch exist 1
+04-10 15:27:00.752 11636 11636 I wrapperjni: ++++++[unzipToMem] begin
+04-10 15:27:00.752 11636 11636 I wrapperjni: [unzipToMem][1141]: context 0x79d6e76c40, size 0xc03bb
+04-10 15:27:00.752 11636 11636 D wrapperjni: find entry : patch
+04-10 15:27:00.752 11636 11636 D wrapperjni: findEntryByName patch
+04-10 15:27:00.752 11636 11636 D wrapperjni: [findEntryByName][160]: find patch
+04-10 15:27:00.752 11636 11636 D wrapperjni: offset [0000ab71][localoff:0000ab4e, nameLen:5, extralen:0], crc[ccc8e73b], method[8], compress_len[743374], name[patch]
+04-10 15:27:00.753 11636 11636 D wrapperjni: strm.avail_out 0
+04-10 15:27:00.753 11636 11636 D wrapperjni: uncompress buf len b57ce, result 0
+04-10 15:27:00.754 11636 11636 I wrapperjni: [unzipToMem][1152]: ret = 743144
+04-10 15:27:00.754 11636 11636 I wrapperjni: ++++++[unzipToMem] end, cost time 1.000000 ms
+04-10 15:27:00.754 11636 11636 E wrapperjni: [unzipDataDbItemToMem] m_pDataDBMem:0x79d6e76c40 pItemContent:0x79804fd910 entry:patch
+04-10 15:27:00.754 11636 11636 D wrapperjni: [unzipDataDbItemToMemUsingRandomKey][400]: load patch success,ptr:0x79804fd910 len:743144
+04-10 15:27:00.754 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] end, cost time 1.000000 ms
+04-10 15:27:00.754 11636 11636 D wrapperjni: [GetPatchInsns] dexIndex:1 pPatchData is 0x0x79804fd918, nPatchCnt:7564 nDexCodeOffset:16612
+04-10 15:27:00.755 11636 11636 D wrapperjni: [patchMem] end
+04-10 15:27:00.755 11636 11636 D wrapperjni: [processDexFileInternal][255]: getDexFileByOpenMemory:0x7c03da83d0
+04-10 15:27:00.755 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] begin
+04-10 15:27:00.755 11636 11636 D wrapperjni: [getDexElementsFromLoader] jPathList:0x7cd6646035
+04-10 15:27:00.755 11636 11636 D wrapperjni: [getDexElementsFromLoader] jdexElements:0x7cd6646039
+04-10 15:27:00.755 11636 11636 D wrapperjni: [getDexElementsFromLoader] index:0 jDexElement:0x7cd6646031 total:1
+04-10 15:27:00.755 11636 11636 D wrapperjni: ++++[getStubDexFileByReflect] jDexFile:0x7cd6646029,sdk:36
+04-10 15:27:00.755 11636 11636 D wrapperjni: [set_mCookie_and_mFile] set ptr mCookie:0x7cd6646025,artType:12
+04-10 15:27:00.755 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [convertDexfileToDexElement][872]: [convertDexfileToDexElement] 0x7cd6646029 jNewDexElement:0x7cd6646021
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] end, cost time 5.000000 ms
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][210]: dex base:0x78eb0f7ffc len:9424058
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenOnAndroidU] try parse openCommon method address on android U
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getElfUtil] find cache elf util:0x7a23d8a530 soname:libdexfile.so
+04-10 15:27:00.756 11636 11636 D wrapperjni: getSymbolAddrInSo symbol _ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhjRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE addr: 0x0
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getSymbolAddrInSo] find cache symbol address:0x7cd5e5f2dc symbol:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE
+04-10 15:27:00.756 11636 11636 D wrapperjni: [GetFunctionAddress] found function:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE(0x7cd5e5f2dc) in libdexfile.so, apilevel:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenModelUBeta] nRet:0x7c03da90f0
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenMemory][793]: nret:0x7c03da90f0
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [initMem] pDexBase:0x78eb0f7ffc
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] m_pPatchDataMem.size():1 dexIndex:2
+04-10 15:27:00.756 11636 11636 D wrapperjni: isEntryExists context 0x79d6e76c40, size 0xc03bb
+04-10 15:27:00.756 11636 11636 D wrapperjni: findEntryByName patch2
+04-10 15:27:00.756 11636 11636 W wrapperjni: [findEntryByName][166]: not find patch2
+04-10 15:27:00.756 11636 11636 D wrapperjni: patch2 not exist
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] entry patch2 not found,may be not set option
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] end
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][255]: getDexFileByOpenMemory:0x7c03da90f0
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jPathList:0x7cd664603d
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jdexElements:0x7cd6646041
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] index:0 jDexElement:0x7cd6646039 total:1
+04-10 15:27:00.756 11636 11636 D wrapperjni: ++++[getStubDexFileByReflect] jDexFile:0x7cd6646031,sdk:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [set_mCookie_and_mFile] set ptr mCookie:0x7cd664602d,artType:12
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [convertDexfileToDexElement][872]: [convertDexfileToDexElement] 0x7cd6646031 jNewDexElement:0x7cd6646029
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][210]: dex base:0x78e98a4ffc len:8721004
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenOnAndroidU] try parse openCommon method address on android U
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getElfUtil] find cache elf util:0x7a23d8a530 soname:libdexfile.so
+04-10 15:27:00.756 11636 11636 D wrapperjni: getSymbolAddrInSo symbol _ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhjRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE addr: 0x0
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getSymbolAddrInSo] find cache symbol address:0x7cd5e5f2dc symbol:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE
+04-10 15:27:00.756 11636 11636 D wrapperjni: [GetFunctionAddress] found function:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE(0x7cd5e5f2dc) in libdexfile.so, apilevel:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenModelUBeta] nRet:0x7c03da7a30
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenMemory][793]: nret:0x7c03da7a30
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [initMem] pDexBase:0x78e98a4ffc
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] m_pPatchDataMem.size():1 dexIndex:3
+04-10 15:27:00.756 11636 11636 D wrapperjni: isEntryExists context 0x79d6e76c40, size 0xc03bb
+04-10 15:27:00.756 11636 11636 D wrapperjni: findEntryByName patch3
+04-10 15:27:00.756 11636 11636 W wrapperjni: [findEntryByName][166]: not find patch3
+04-10 15:27:00.756 11636 11636 D wrapperjni: patch3 not exist
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] entry patch3 not found,may be not set option
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] end
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][255]: getDexFileByOpenMemory:0x7c03da7a30
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jPathList:0x7cd6646045
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jdexElements:0x7cd6646049
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] index:0 jDexElement:0x7cd6646041 total:1
+04-10 15:27:00.756 11636 11636 D wrapperjni: ++++[getStubDexFileByReflect] jDexFile:0x7cd6646039,sdk:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [set_mCookie_and_mFile] set ptr mCookie:0x7cd6646035,artType:12
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [convertDexfileToDexElement][872]: [convertDexfileToDexElement] 0x7cd6646039 jNewDexElement:0x7cd6646031
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][210]: dex base:0x78e8fe1ffc len:9182529
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenOnAndroidU] try parse openCommon method address on android U
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getElfUtil] find cache elf util:0x7a23d8a530 soname:libdexfile.so
+04-10 15:27:00.756 11636 11636 D wrapperjni: getSymbolAddrInSo symbol _ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhjRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE addr: 0x0
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getSymbolAddrInSo] find cache symbol address:0x7cd5e5f2dc symbol:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE
+04-10 15:27:00.756 11636 11636 D wrapperjni: [GetFunctionAddress] found function:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE(0x7cd5e5f2dc) in libdexfile.so, apilevel:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenModelUBeta] nRet:0x7c03da68b0
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenMemory][793]: nret:0x7c03da68b0
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [initMem] pDexBase:0x78e8fe1ffc
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] m_pPatchDataMem.size():1 dexIndex:4
+04-10 15:27:00.756 11636 11636 D wrapperjni: isEntryExists context 0x79d6e76c40, size 0xc03bb
+04-10 15:27:00.756 11636 11636 D wrapperjni: findEntryByName patch4
+04-10 15:27:00.756 11636 11636 W wrapperjni: [findEntryByName][166]: not find patch4
+04-10 15:27:00.756 11636 11636 D wrapperjni: patch4 not exist
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] entry patch4 not found,may be not set option
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] end
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][255]: getDexFileByOpenMemory:0x7c03da68b0
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jPathList:0x7cd664604d
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jdexElements:0x7cd6646051
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] index:0 jDexElement:0x7cd6646049 total:1
+04-10 15:27:00.756 11636 11636 D wrapperjni: ++++[getStubDexFileByReflect] jDexFile:0x7cd6646041,sdk:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [set_mCookie_and_mFile] set ptr mCookie:0x7cd664603d,artType:12
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [convertDexfileToDexElement][872]: [convertDexfileToDexElement] 0x7cd6646041 jNewDexElement:0x7cd6646039
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][210]: dex base:0x78e880cffc len:8206568
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenOnAndroidU] try parse openCommon method address on android U
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getElfUtil] find cache elf util:0x7a23d8a530 soname:libdexfile.so
+04-10 15:27:00.756 11636 11636 D wrapperjni: getSymbolAddrInSo symbol _ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhjRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE addr: 0x0
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getSymbolAddrInSo] find cache symbol address:0x7cd5e5f2dc symbol:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE
+04-10 15:27:00.756 11636 11636 D wrapperjni: [GetFunctionAddress] found function:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE(0x7cd5e5f2dc) in libdexfile.so, apilevel:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenModelUBeta] nRet:0x7c03db0ef0
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenMemory][793]: nret:0x7c03db0ef0
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [initMem] pDexBase:0x78e880cffc
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] m_pPatchDataMem.size():1 dexIndex:5
+04-10 15:27:00.756 11636 11636 D wrapperjni: isEntryExists context 0x79d6e76c40, size 0xc03bb
+04-10 15:27:00.756 11636 11636 D wrapperjni: findEntryByName patch5
+04-10 15:27:00.756 11636 11636 W wrapperjni: [findEntryByName][166]: not find patch5
+04-10 15:27:00.756 11636 11636 D wrapperjni: patch5 not exist
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] entry patch5 not found,may be not set option
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] end
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][255]: getDexFileByOpenMemory:0x7c03db0ef0
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jPathList:0x7cd6646055
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jdexElements:0x7cd6646059
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] index:0 jDexElement:0x7cd6646051 total:1
+04-10 15:27:00.756 11636 11636 D wrapperjni: ++++[getStubDexFileByReflect] jDexFile:0x7cd6646049,sdk:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [set_mCookie_and_mFile] set ptr mCookie:0x7cd6646045,artType:12
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [convertDexfileToDexElement][872]: [convertDexfileToDexElement] 0x7cd6646049 jNewDexElement:0x7cd6646041
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][210]: dex base:0x78e7f0dffc len:9428000
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenOnAndroidU] try parse openCommon method address on android U
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getElfUtil] find cache elf util:0x7a23d8a530 soname:libdexfile.so
+04-10 15:27:00.756 11636 11636 D wrapperjni: getSymbolAddrInSo symbol _ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhjRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE addr: 0x0
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getSymbolAddrInSo] find cache symbol address:0x7cd5e5f2dc symbol:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE
+04-10 15:27:00.756 11636 11636 D wrapperjni: [GetFunctionAddress] found function:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE(0x7cd5e5f2dc) in libdexfile.so, apilevel:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenModelUBeta] nRet:0x7c03db0d30
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenMemory][793]: nret:0x7c03db0d30
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [initMem] pDexBase:0x78e7f0dffc
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] m_pPatchDataMem.size():1 dexIndex:6
+04-10 15:27:00.756 11636 11636 D wrapperjni: isEntryExists context 0x79d6e76c40, size 0xc03bb
+04-10 15:27:00.756 11636 11636 D wrapperjni: findEntryByName patch6
+04-10 15:27:00.756 11636 11636 W wrapperjni: [findEntryByName][166]: not find patch6
+04-10 15:27:00.756 11636 11636 D wrapperjni: patch6 not exist
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] entry patch6 not found,may be not set option
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] end
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][255]: getDexFileByOpenMemory:0x7c03db0d30
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jPathList:0x7cd664605d
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jdexElements:0x7cd6646061
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] index:0 jDexElement:0x7cd6646059 total:1
+04-10 15:27:00.756 11636 11636 D wrapperjni: ++++[getStubDexFileByReflect] jDexFile:0x7cd6646051,sdk:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [set_mCookie_and_mFile] set ptr mCookie:0x7cd664604d,artType:12
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [convertDexfileToDexElement][872]: [convertDexfileToDexElement] 0x7cd6646051 jNewDexElement:0x7cd6646049
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][210]: dex base:0x78e768affc len:8917316
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenOnAndroidU] try parse openCommon method address on android U
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getElfUtil] find cache elf util:0x7a23d8a530 soname:libdexfile.so
+04-10 15:27:00.756 11636 11636 D wrapperjni: getSymbolAddrInSo symbol _ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhjRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE addr: 0x0
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getSymbolAddrInSo] find cache symbol address:0x7cd5e5f2dc symbol:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE
+04-10 15:27:00.756 11636 11636 D wrapperjni: [GetFunctionAddress] found function:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE(0x7cd5e5f2dc) in libdexfile.so, apilevel:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenModelUBeta] nRet:0x7c03db16d0
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenMemory][793]: nret:0x7c03db16d0
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [initMem] pDexBase:0x78e768affc
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] m_pPatchDataMem.size():1 dexIndex:7
+04-10 15:27:00.756 11636 11636 D wrapperjni: isEntryExists context 0x79d6e76c40, size 0xc03bb
+04-10 15:27:00.756 11636 11636 D wrapperjni: findEntryByName patch7
+04-10 15:27:00.756 11636 11636 W wrapperjni: [findEntryByName][166]: not find patch7
+04-10 15:27:00.756 11636 11636 D wrapperjni: patch7 not exist
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] entry patch7 not found,may be not set option
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] end
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][255]: getDexFileByOpenMemory:0x7c03db16d0
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jPathList:0x7cd6646065
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jdexElements:0x7cd6646069
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] index:0 jDexElement:0x7cd6646061 total:1
+04-10 15:27:00.756 11636 11636 D wrapperjni: ++++[getStubDexFileByReflect] jDexFile:0x7cd6646059,sdk:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [set_mCookie_and_mFile] set ptr mCookie:0x7cd6646055,artType:12
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [convertDexfileToDexElement][872]: [convertDexfileToDexElement] 0x7cd6646059 jNewDexElement:0x7cd6646051
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][210]: dex base:0x78e6f9effc len:7250796
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenOnAndroidU] try parse openCommon method address on android U
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getElfUtil] find cache elf util:0x7a23d8a530 soname:libdexfile.so
+04-10 15:27:00.756 11636 11636 D wrapperjni: getSymbolAddrInSo symbol _ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhjRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE addr: 0x0
+04-10 15:27:00.756 11636 11636 E wrapperjni: [getSymbolAddrInSo] find cache symbol address:0x7cd5e5f2dc symbol:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE
+04-10 15:27:00.756 11636 11636 D wrapperjni: [GetFunctionAddress] found function:_ZN3art13DexFileLoader10OpenCommonENSt3__110shared_ptrINS_16DexFileContainerEEEPKhmRKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalIjEEPKNS_10OatDexFileEbbPSC_PNS_22DexFileLoaderErrorCodeE(0x7cd5e5f2dc) in libdexfile.so, apilevel:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenModelUBeta] nRet:0x7c03db0390
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexFileByOpenMemory][793]: nret:0x7c03db0390
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[getDexFileByOpenMemory] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [initMem] pDexBase:0x78e6f9effc
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] m_pPatchDataMem.size():1 dexIndex:8
+04-10 15:27:00.756 11636 11636 D wrapperjni: isEntryExists context 0x79d6e76c40, size 0xc03bb
+04-10 15:27:00.756 11636 11636 D wrapperjni: findEntryByName patch8
+04-10 15:27:00.756 11636 11636 W wrapperjni: [findEntryByName][166]: not find patch8
+04-10 15:27:00.756 11636 11636 D wrapperjni: patch8 not exist
+04-10 15:27:00.756 11636 11636 D wrapperjni: [unzipPatchFileToMem] entry patch8 not found,may be not set option
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[unzipPatchFileToMem] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [patchMem] end
+04-10 15:27:00.756 11636 11636 D wrapperjni: [processDexFileInternal][255]: getDexFileByOpenMemory:0x7c03db0390
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jPathList:0x7cd664606d
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] jdexElements:0x7cd6646071
+04-10 15:27:00.756 11636 11636 D wrapperjni: [getDexElementsFromLoader] index:0 jDexElement:0x7cd6646069 total:1
+04-10 15:27:00.756 11636 11636 D wrapperjni: ++++[getStubDexFileByReflect] jDexFile:0x7cd6646061,sdk:36
+04-10 15:27:00.756 11636 11636 D wrapperjni: [set_mCookie_and_mFile] set ptr mCookie:0x7cd664605d,artType:12
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[set_mCookie_and_mFile] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: [convertDexfileToDexElement][872]: [convertDexfileToDexElement] 0x7cd6646061 jNewDexElement:0x7cd6646059
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[processDexFileInternal] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[mergeDexElements] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [mergeDexElements] jclsloader:0x7cd6646065
+04-10 15:27:00.756 11636 11636 D wrapperjni: [mergeDexElements] jPathList:0x7cd6646061
+04-10 15:27:00.756 11636 11636 D wrapperjni: [mergeDexElements] jdexElements:0x7cd6646065
+04-10 15:27:00.756 11636 11636 D wrapperjni: set_new_dexelements in
+04-10 15:27:00.756 11636 11636 D wrapperjni: [set_new_dexelements] since Android O, special classloader manipulate, bFakeChannel:0
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[checkPreloadClass] begin
+04-10 15:27:00.756 11636 11636 D wrapperjni: [checkPreloadClass][952]: check class number 0
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[checkPreloadClass] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 D wrapperjni: set_new_dexelements out
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[mergeDexElements] end, cost time 0.000000 ms
+04-10 15:27:00.756 11636 11636 I wrapperjni: ++++++[ProcessArtDynamicLoad] end, cost time 6.000000 ms
